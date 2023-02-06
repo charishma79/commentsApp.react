@@ -1,0 +1,126 @@
+/* Write your CSS here */
+* {
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+.bg-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 10px;
+}
+
+.comment-bg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 0px;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-family: Roboto;
+  font-size: 15px;
+  color: #475569;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+.name-text {
+  height: 40px;
+  padding: 15px;
+  color: #64748b;
+  font-family: Roboto;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #cbd2d9;
+}
+
+.text-comment {
+  padding: 15px;
+  color: #64748b;
+  font-family: Roboto;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #cbd2d9;
+}
+
+.add-btn {
+  background-color: #0b69ff;
+  height: 40px;
+  width: 130px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #dee0e3;
+  font-family: Roboto;
+  font-size: 15px;
+  border-width: 0px;
+}
+
+.comment-image {
+  height: 350px;
+}
+
+.separator {
+  border: 1px solid #cbd2d9;
+}
+
+.comment-count {
+  font-family: Roboto;
+  font-size: 17px;
+  color: #334155;
+  margin-top: 15px;
+}
+
+.count {
+  height: 5px;
+  width: 30px;
+  background-color: #0b69ff;
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #dee0e3;
+  font-family: Roboto;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.comments-holder {
+  list-style-type: none;
+  height: 10vh;
+}
+
+@media screen and (max-width: 576px) {
+  .comment-bg-container {
+    flex-direction: column;
+  }
+  .comment-container {
+    order: 2;
+  }
+  .comment-image {
+    height: 200px;
+  }
+  .bg-container {
+    padding: 8px;
+  }
+}
